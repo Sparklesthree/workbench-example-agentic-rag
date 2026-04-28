@@ -18,3 +18,74 @@ UNDER IAF MD 5, what ‘professional areas’ ARE RECOGNISED FOR ANNEX C ‘Audi
 ---DECISION: GENERATION IS GROUNDED IN DOCUMENTS---
 ---GRADE GENERATION vs QUESTION---
 ---DECISION: GENERATION ADDRESSES QUESTION---
+---ROUTE QUESTION---
+what is iaf md 5
+{'datasource': 'embedded documents'}
+---ROUTE QUESTION---
+How do I add an integration in the CLI?
+{'datasource': 'vectorstore'}
+---ROUTE QUESTION TO RAG---
+---RETRIEVE---
+---CHECK DOCUMENT RELEVANCE TO QUESTION---
+---ROUTE QUESTION---
+test
+{'datasource': 'web_search'}
+---ROUTE QUESTION TO WEB SEARCH---
+---WEB SEARCH---
+---GENERATE---
+---CHECK HALLUCINATIONS---
+---DECISION: GENERATION IS GROUNDED IN DOCUMENTS---
+---GRADE GENERATION vs QUESTION---
+---DECISION: GENERATION ADDRESSES QUESTION---
+[split_documents] Splitting 1 docs with chunk size 250, overlap 0
+[embed_documents] Embedding 70 chunks using model: nvidia/nv-embedqa-e5-v5
+[embed_documents] Vectorstore creation failed: [###] Input length 1216 exceeds maximum allowed token size 512
+{'error': 'Input length 1216 exceeds maximum allowed token size 512'}
+---ROUTE QUESTION---
+what is the audit time for a QMS audit of a 3 FTE company
+{'datasource': 'web_search'}
+---ROUTE QUESTION TO WEB SEARCH---
+---WEB SEARCH---
+---GENERATE---
+---CHECK HALLUCINATIONS---
+---DECISION: GENERATION IS GROUNDED IN DOCUMENTS---
+---GRADE GENERATION vs QUESTION---
+---DECISION: GENERATION ADDRESSES QUESTION---
+---ROUTE QUESTION---
+What is the full title of the document that is named 'IAF MD 5:2023'
+{'datasource': 'web_search'}
+---ROUTE QUESTION TO WEB SEARCH---
+---WEB SEARCH---
+---GENERATE---
+---CHECK HALLUCINATIONS---
+---DECISION: GENERATION IS GROUNDED IN DOCUMENTS---
+---GRADE GENERATION vs QUESTION---
+---DECISION: GENERATION ADDRESSES QUESTION---
+[clear] Collection 'rag-chroma' cleared.
+[clear] Removed directory: 7eb2820a-ed49-45a1-ad25-e60187844925
+[split_documents] Splitting 3 docs with chunk size 250, overlap 0
+[embed_documents] Embedding 61 chunks using model: nvidia/nv-embedqa-e5-v5
+[embed_documents] Vectorstore creation failed: [###] Input length 1216 exceeds maximum allowed token size 512
+{'error': 'Input length 1216 exceeds maximum allowed token size 512'}
+---ROUTE QUESTION---
+What is the full title of the document that is named 'IAF MD 5:2023'?
+{'datasource': 'web_search'}
+---ROUTE QUESTION TO WEB SEARCH---
+---WEB SEARCH---
+---GENERATE---
+---CHECK HALLUCINATIONS---
+---DECISION: GENERATION IS GROUNDED IN DOCUMENTS---
+---GRADE GENERATION vs QUESTION---
+---DECISION: GENERATION ADDRESSES QUESTION---
+---ROUTE QUESTION---
+What is the first paragraph on page 2 of 33 of 'IAF MD 5:2023'?
+{'datasource': 'web_search'}
+---ROUTE QUESTION TO WEB SEARCH---
+---WEB SEARCH---
+---GENERATE---
+---CHECK HALLUCINATIONS---
+---DECISION: GENERATION IS GROUNDED IN DOCUMENTS---
+---GRADE GENERATION vs QUESTION---
+---DECISION: GENERATION ADDRESSES QUESTION---
+---ROUTE QUESTION---
+What is the first paragraph on page 6 of 33 of 'IAF MD 5:2023'?
